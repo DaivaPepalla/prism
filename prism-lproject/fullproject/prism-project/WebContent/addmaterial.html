@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Assesment Tool PRISM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0px;
+      overflow: hidden;
+      background-color: lightgray;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: blue;
+     font-size:20px;
+      text-align: center;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    .active{
+    background-color: gray;
+    color: white;
+    }
+    li a:hover {
+      background-color: orange;
+      color: white;
+    }
+    </style>
+
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">  <div class="container">
+    <a class="navbar-brand mx-auto" href="#">
+
+      <img src="images/PRISMlogo.jpg" width="200" height="50" alt="" />
+    </a>
+    
+    <br><br>
+    <div class="text-right">
+      <!-- <button type="button" class="btn btn-light">Light</button> -->
+      <!-- <img src="accountlogo.png" width="50" height="50" alt="" /> -->
+      <button type="button" class="btn btn-light-light my-2 my-sm-0"><i class="material-icons">&#xe7fd;</i></button>
+
+    </div>
+</nav>
+<br>
+<!-- <center>
+<p>ADD MATERIAL</p>
+
+<div class="container">
+    <form method="post" action="/">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Book Title</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Book Title">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Published by</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Published by">
+        </div>
+      </div>
+     
+      <div class="row">
+          <div class="col-25">
+            <label for="enterid">Book ID</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="enterid" name="enterId" placeholder="Book ID">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+               <form action="/action_page.php">
+                 <input type="file" id="myFile" name="filename">
+                 <input type="submit">
+</div>
+</div> -->
+
+
+ <div class="container p-10 my-10 border">
+    <center>
+      <h2>ADD MATERIAL</h2>
+      </center>
+      <br>
+      <form method="post" action="addmaterial" class="row g-3">
+
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Title</label>
+          <input type="text" class="form-control" name="title">
+        </div>
+        
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Date</label>
+          <input type="date" class="form-control" name="date">
+        </div>
+ 
+        <div class="col-12">
+          <div class="row mb-2">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Description</label>
+        </div> 
+          <input type="text" class="form-control" name="address" placeholder="1234 Main St">
+        </div>
+
+        <div class="col-md-6">
+          <label for="uploadmaterial" class="form-label">Upload Material</label>
+          <input type="file" class="form-control" placeholder="select file" name="upaddress" required/>
+        </div>
+        
+        <div class="col-md-6">
+          <label for="uploadmaterial" class="form-label">Upload Recording</label>
+          <input type="file" class="form-control" placeholder="select file" name="uprec" required/>
+        </div>
+          <input type="submit" value="Add Material" class="form-control btn btn-primary">
+        <br><br>
+   </form>
+
+
+</body>
+</html>
+
+

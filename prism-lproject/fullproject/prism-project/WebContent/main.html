@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* to make the whole container position */
+        .container-fluid {
+            min-height: calc(100vh - 20vh);
+            padding: 100px;
+            align-items: center;
+        }
+
+        /* to position the image and place it correctly */
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+        }
+
+        .img-box {
+            width: 100%;
+            border: 1px solid #ffffff;
+            height: 250px;
+        }
+
+        .loginImg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* to place the container elements centered */
+        .card {
+            min-height: 350px;
+            display: grid;
+            place-items: center;
+        }
+
+        .forgot-password-box {
+            padding: 10px 0 0 0;
+        }
+
+        .text-decoration-none {
+            margin: 5px;
+        }
+
+        .btn-light {
+            border: 1px solid #ffffff;
+            transition: 0.6s;
+        }
+
+        .btn-light:hover {
+            background: #1b81e7;
+            color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Just an image -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#">
+
+                <img src="images/PRISMlogo.jpg" width="200" height="50" alt="" />
+            </a>
+            
+            <br><br>
+            <div class="text-right">
+                <!-- <button type="button" class="btn btn-light">Light</button> -->
+                <!-- <img src="accountlogo.png" width="50" height="50" alt="" /> -->
+                <!-- <button type="button" class="btn btn-light-light my-2 my-sm-0"><i
+                        class="material-icons">&#xe7fd;</i></button> -->
+                        <!-- <div class="btn-group">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Login
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Admin</a>
+                              <a class="dropdown-item" href="#">Manager</a>
+                              <a class="dropdown-item" href="#">Trainer</a>
+                              <a class="dropdown-item" href="#">Trainee</a>
+                          </div>
+
+            </div> -->
+    </nav>
+    <div class="container-fluid d-flex w-80 flex-row">
+        <div class="image flex-grow-1">
+            <div class="img-box">
+                <img class="loginImg" src="images/loginside.jpg" alt="" />
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="card" style="width: 20rem;">
+            <div class="card-body">
+                <div class="text-center">
+
+                    <h5 class="card-title">ROLE</h5>
+                </div>
+                <!-- <form method="post" action="/action_page.php">
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="User Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="forgot-password-box">
+                        <a href="#" class="text-decoration-none">forgot password?</a>
+                    </div>
+                    <br><br>
+                    <button type="submit" class="btn btn-light">Submit</button>
+                </form> -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Login
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="adminlogin.html">Admin</a>
+                      <a class="dropdown-item" href="managerlogin.html">Manager</a>
+                      <a class="dropdown-item" href="trainerlogin.html">Trainer</a>
+                      <a class="dropdown-item" href="traineelogin.html">Trainee</a>
+                  </div>
+
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
